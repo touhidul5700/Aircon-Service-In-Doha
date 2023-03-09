@@ -48,26 +48,33 @@ body {
     background: #00AEDD;
     color: #ffffff;
 }
-.apoinment-button a:hover{
+
+.apoinment-button a:hover {
     background: #026b88;
 }
+
 .menu-right-css {
     float: right;
 }
-.menu a{
+
+.menu a {
     font-weight: 700;
 }
+
 .menu {
     width: 60% !important;
     margin: auto;
 
 }
-.menu-option a{
+
+.menu-option a {
     color: #2b2b2b;
 }
-.menu-option:hover{
+
+.menu-option:hover {
     color: #00AEDD;
 }
+
 .sticky-menu-css {
     z-index: 200;
     background: #ffffff;
@@ -114,93 +121,110 @@ body {
     width: 200px;
     height: 200px;
 }
-.story-col-2-content{
+
+.story-col-2-content {
     margin-top: 20px;
     display: flex;
     gap: 20px;
 }
-.story-col-2-content h4{
+
+.story-col-2-content h4 {
     color: #00AEDD;
 }
-.story-col-1-content{
+
+.story-col-1-content {
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
     color: #777777;
     font-size: 14px;
 }
-.story-img img{
+
+.story-img img {
     width: 200px;
     margin-top: 20px;
     margin-left: 200px;
 }
 
 /* service-section */
-.service-container{
+.service-container {
     width: 80%;
     margin: auto;
     margin-top: 50px;
 }
-.service-heading{
+
+.service-heading {
     color: #00AEDD;
     text-align: center;
     margin-bottom: 20px;
 }
-.service-heading span{
+
+.service-heading span {
     font-weight: 100;
 }
-.service{
+
+.service {
     border: 1px solid #dcdcdc;
     padding: 20px;
     color: #00AEDD;
 }
-.service:hover{
+
+.service:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid #00AEDD;
 }
 
 /* testimonial part */
-.testimonial{
+.testimonial {
     background: #00AEDD;
     padding-top: 50px;
     padding-bottom: 100px;
     margin-bottom: 100px;
     color: #ffffff;
 }
-.testimonial-container{
+
+.testimonial-container {
     width: 80%;
     margin: auto;
 }
-.comment-img img{
+
+.comment-img img {
     width: 100%;
     height: auto;
 }
 
 /* tips-and-tricks */
-.tips{
+.tips {
     width: 80%;
     margin: auto;
+    margin-bottom: 100px;
 }
-.tips-heading{
+
+.tips-heading {
     text-align: center;
     margin-bottom: 20px;
 }
-.tips-heading span{
+
+.tips-heading span {
     font-weight: 100;
 }
-.tips-img img{
+
+.tips-img img {
     width: 100%;
 }
-.tips-content h6{
- margin-top: 20px;
- color: #00AEDD;
+
+.tips-content h6 {
+    margin-top: 20px;
+    color: #00AEDD;
 }
-.tips-content hr{
+
+.tips-content hr {
     width: 90%;
     margin: auto;
     padding: 5px;
 }
-.tips-content{
+
+.tips-content {
     line-height: 24px;
     font-size: 15px;
     font-weight: 400;
@@ -209,20 +233,22 @@ body {
 }
 
 /* footer */
-footer{
+footer {
     background: #00AEDD;
     padding: 100px;
     text-align: center;
     justify-content: center;
 }
-.social i{
+
+.social i {
     padding: 10px;
     background: #6FC6DD;
     border-radius: 50%;
     margin: 10px;
     color: #F2F2F2;
 }
-footer p{
+
+footer p {
     color: #ffffff;
     line-height: 24px;
     font-weight: 400;
@@ -233,60 +259,80 @@ footer p{
 
 
 /* //mobile responsive// */
-@media(max-width:767px){
-    .header-container{
+@media(max-width:767px) {
+    .header-container {
         display: none;
     }
+
     .carousel-item img {
         height: 150px;
     }
-    .menu{
+
+    .menu {
         width: 100%;
         margin: 0;
     }
-    .mobile-menu{
-     margin-right: -100px;
+
+    .mobile-menu {
+        margin-right: -100px;
     }
-    .story-container{
+
+    .story-container {
         flex-direction: column;
     }
-    .story-container{
+
+    .story-container {
         width: 100%;
         margin: 0;
     }
-    .story-col-1 .img{
+
+    .story-col-1 .img {
         flex-direction: column;
     }
-    .story-col-2 .img{
+
+    .story-col-2 .img {
         flex-direction: column;
     }
-    .story-col-2 .img img{
+
+    .story-col-2 .img img {
         width: 90%;
         margin: auto;
     }
-    .story-col-2-content{
+
+    .story-col-2-content {
         flex-direction: column;
         width: 90%;
         margin: auto;
         margin-top: 20px;
     }
 
-    .story-img img{
+    .story-img img {
         width: 100%;
         margin: 0;
     }
-    .story-img{
+
+    .story-img {
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .tips {
         width: 90%;
         margin: auto;
     }
-    .tips{
-        width: 90%;
-        margin: auto;
-    }
-    .tips-container{
+
+    .tips-container {
         flex-direction: column;
     }
-    footer{
+    .testimonial-container {
+        width: 90%;
+        margin: auto;
+    }
+    footer {
         padding: 10px;
+    }
+    .service-content{
+        flex-direction: row !important;
     }
 }
