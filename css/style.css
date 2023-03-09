@@ -316,7 +316,12 @@ footer p {
         width: 100%;
         margin: 0;
     }
-
+    .mobile-none{
+        display: none;
+    }
+    .story-bottom-mobile{
+        height: 300px !important;
+    }
     .story-col-1 .img {
         flex-direction: column;
     }
