@@ -37,24 +37,6 @@ body {
     line-height: 5px;
 }
 
-/* menu part start */
-/* .apoinment-button {
-    margin-top: 20px;
-}
-
-.apoinment-button a {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 35px;
-    padding-top: 35px;
-    background: #00AEDD;
-    color: #ffffff;
-}
-
-.apoinment-button a:hover {
-    background: #026b88;
-} */
-
 .menu a {
     font-weight: 700;
 }
@@ -361,20 +343,6 @@ footer p {
     .tips-container {
         flex-direction: column;
     }
-
-    .testimonial-container {
-        width: 90%;
-        margin: auto;
-    }
-
-    .testimonial-content-container {
-        flex-direction: column;
-    }
-
-    .comment-1 .row {
-        flex-direction: column;
-    }
-
     footer {
         padding: 10px;
     }
