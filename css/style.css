@@ -53,10 +53,6 @@ body {
     background: #026b88;
 }
 
-.menu-right-css {
-    float: right;
-}
-
 .menu a {
     font-weight: 700;
 }
@@ -64,7 +60,6 @@ body {
 .menu {
     width: 60% !important;
     margin: auto;
-
 }
 
 .menu-option a {
@@ -81,7 +76,7 @@ body {
 }
 
 .nav-logo {
-    width: 100px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -162,7 +157,14 @@ body {
 .service-heading span {
     font-weight: 100;
 }
-
+.service-content h4:hover{
+    color: #0693e3;
+    transition: 1s;
+}
+.service-content p:hover{
+    color: #0693e3 !important;
+    transition: 1s;
+}
 .service {
     border: 1px solid #dcdcdc;
     padding: 20px;
@@ -248,6 +250,10 @@ footer {
     color: #F2F2F2;
 }
 
+.social i:hover {
+    background: #9bd9eb;
+}
+
 footer p {
     color: #ffffff;
     line-height: 24px;
@@ -271,6 +277,11 @@ footer p {
     .menu {
         width: 100%;
         margin: 0;
+    }
+
+    .nav-btn-css {
+        border-bottom: 1px solid #777777 !important;
+        border-radius: 0 !important;
     }
 
     .mobile-menu {
@@ -325,14 +336,26 @@ footer p {
     .tips-container {
         flex-direction: column;
     }
+
     .testimonial-container {
         width: 90%;
         margin: auto;
     }
+
     footer {
         padding: 10px;
     }
-    .service-content{
+
+    .service-content {
         flex-direction: row !important;
+    }
+
+    .menu-option {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .comment-1 .row{
+        flex-direction: column;
     }
 }
