@@ -6,6 +6,7 @@ body {
 
 * {
     text-decoration: none !important;
+    box-sizing: border-box;
 }
 
 /* header part start */
@@ -33,10 +34,11 @@ body {
 
 .Schedule-content h6 {
     color: #00AEDD;
+    line-height: 5px;
 }
 
 /* menu part start */
-.apoinment-button {
+/* .apoinment-button {
     margin-top: 20px;
 }
 
@@ -51,7 +53,7 @@ body {
 
 .apoinment-button a:hover {
     background: #026b88;
-}
+} */
 
 .menu a {
     font-weight: 700;
@@ -157,14 +159,17 @@ body {
 .service-heading span {
     font-weight: 100;
 }
-.service-content h4:hover{
+
+.service-content h4:hover {
     color: #0693e3;
     transition: 1s;
 }
-.service-content p:hover{
+
+.service-content p:hover {
     color: #0693e3 !important;
     transition: 1s;
 }
+
 .service {
     border: 1px solid #dcdcdc;
     padding: 20px;
@@ -249,7 +254,16 @@ footer {
     margin: 10px;
     color: #F2F2F2;
 }
-
+.social-icon-css{
+    color: #F2F2F2 !important;
+    background: #6FC6DD;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px !important;
+}
+.social-icon-css:hover{
+    background: #9bd9eb;
+}
 .social i:hover {
     background: #9bd9eb;
 }
@@ -265,7 +279,7 @@ footer p {
 
 
 /* //mobile responsive// */
-@media(max-width:767px) {
+@media(max-width:768px) {
     .header-container {
         display: none;
     }
@@ -286,6 +300,12 @@ footer p {
 
     .mobile-menu {
         margin-right: -100px;
+    }
+
+    .menu-option {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
     .story-container {
@@ -320,12 +340,12 @@ footer p {
     .story-img img {
         width: 100%;
         margin: 0;
+        margin-bottom: 20px;
     }
 
     .story-img {
         width: 90%;
         margin: auto;
-        gap: 20px;
     }
 
     .tips {
@@ -342,6 +362,14 @@ footer p {
         margin: auto;
     }
 
+    .testimonial-content-container {
+        flex-direction: column;
+    }
+
+    .comment-1 .row {
+        flex-direction: column;
+    }
+
     footer {
         padding: 10px;
     }
@@ -350,12 +378,120 @@ footer p {
         flex-direction: row !important;
     }
 
+    .service-row {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1024px){
+    .header-container {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-btn-css {
+        border-bottom: 1px solid #777777 !important;
+        border-radius: 0 !important;
+    }
+
+    .mobile-menu {
+        margin-right: -100px;
+    }
+
     .menu-option {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
     }
-    .comment-1 .row{
+
+    .story-container {
         flex-direction: column;
+    }
+
+    .story-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .story-col-1 .img {
+        flex-direction: column;
+    }
+
+    .story-col-2 .img {
+        flex-direction: column;
+    }
+
+    .story-col-2 .img img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .story-col-2-content {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .story-img img {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .story-img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tips {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tips-container {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .testimonial-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .testimonial-content-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .comment-1 .row {
+        flex-direction: column;
+    }
+    .comment-img img{
+        height: 250px;
+    }
+    footer {
+        padding: 10px;
+    }
+
+    .service-content {
+        flex-direction: row !important;
+    }
+
+    .service-row {
+        flex-direction: column;
+    }
+    .tips-content hr{
+        width: 100%;
     }
 }
