@@ -124,7 +124,26 @@ body {
     margin-top: 20px;
     margin-left: 200px;
 }
-
+/* call-now */
+.call-now-btn a{
+    padding: 20px;
+    color: #F2F2F2;
+    background: #00adddcb;
+}
+.call-now-btn a:hover{
+    padding: 20px;
+    color: #F2F2F2;
+    background: #0692e3c3;
+}
+.call-now-btn{
+    display: none;
+    padding-top: 500px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 900;
+}
 /* service-section */
 .service-container {
     width: 80%;
@@ -161,25 +180,6 @@ body {
 .service:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid #00AEDD;
-}
-
-/* testimonial part */
-.testimonial {
-    background: #00AEDD;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-    color: #ffffff;
-}
-
-.testimonial-container {
-    width: 80%;
-    margin: auto;
-}
-
-.comment-img img {
-    width: 100%;
-    height: auto;
 }
 
 /* tips-and-tricks */
@@ -261,13 +261,13 @@ footer p {
 
 
 /* //mobile responsive// */
-@media(max-width:768px) {
+@media(max-width:1024px) {
     .header-container {
         display: none;
     }
 
     .carousel-item img {
-        height: 150px;
+        height: 300px;
     }
 
     .menu {
@@ -281,7 +281,7 @@ footer p {
     }
 
     .mobile-menu {
-        margin-right: -100px;
+        margin-right: -70px;
     }
 
     .menu-option {
@@ -289,7 +289,9 @@ footer p {
         flex-direction: column;
         box-sizing: border-box;
     }
-
+    .call-now-btn{
+        display: block;
+    }
     .story-container {
         flex-direction: column;
     }
@@ -356,115 +358,8 @@ footer p {
     }
 }
 
-@media(max-width:1024px){
-    .header-container {
-        display: none;
-    }
-
+@media(max-width:768px){
     .carousel-item img {
-        height: 400px;
-    }
-
-    .menu {
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-btn-css {
-        border-bottom: 1px solid #777777 !important;
-        border-radius: 0 !important;
-    }
-
-    .mobile-menu {
-        margin-right: -100px;
-    }
-
-    .menu-option {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-    }
-
-    .story-container {
-        flex-direction: column;
-    }
-
-    .story-container {
-        width: 100%;
-        margin: 0;
-    }
-
-    .story-col-1 .img {
-        flex-direction: column;
-    }
-
-    .story-col-2 .img {
-        flex-direction: column;
-    }
-
-    .story-col-2 .img img {
-        width: 90%;
-        margin: auto;
-    }
-
-    .story-col-2-content {
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-        margin-top: 20px;
-    }
-
-    .story-img img {
-        width: 100%;
-        height: 500px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .story-img {
-        width: 90%;
-        margin: auto;
-    }
-
-    .tips {
-        width: 90%;
-        margin: auto;
-    }
-
-    .tips-container {
-        flex-direction: column;
-        gap: 50px;
-        margin-bottom: 50px;
-    }
-
-    .testimonial-container {
-        width: 90%;
-        margin: auto;
-    }
-
-    .testimonial-content-container {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .comment-1 .row {
-        flex-direction: column;
-    }
-    .comment-img img{
-        height: 250px;
-    }
-    footer {
-        padding: 10px;
-    }
-
-    .service-content {
-        flex-direction: row !important;
-    }
-
-    .service-row {
-        flex-direction: column;
-    }
-    .tips-content hr{
-        width: 100%;
+        height: 150px;
     }
 }
