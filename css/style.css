@@ -140,11 +140,11 @@ body {
 }
 
 /* call-now */
-.call-now-btn a {}
+
 
 .call-now-btn {
     display: none;
-    padding-top: 600px;
+    padding-top: 250px;
     margin-right: 30px;
     position: fixed;
     bottom: 0;
@@ -156,7 +156,7 @@ body {
 
 .call-now-btn span {
     color: #F2F2F2 !important;
-    padding: 10px;
+    padding: 15px;
     color: #F2F2F2;
     background: #00adddcb;
     border-radius: 50%;
